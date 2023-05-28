@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico">
+    <title>Contact</title>
+<style>
+body{
+  
+    background-color: #f6ecd6;
+}
+    
+.flex{
+    display: flex;
+}
+.center{
+justify-content: center;
+align-items: center; /* align控制的是在交叉轴上的位置 */
+
+}
+.push-to-end {
+margin-top: auto;
+}
+.fullPage{
+   height :100vh;
+   flex-direction:column;
+
+}
+.title{
+ font-size:80px;
+ font-family: 'PTSerif', sans-serif; 
+ color:  #000080;
+}
+.sub-title{
+ font-size:60px;
+ font-family: 'PTSerif', sans-serif; 
+ color:  #000080;
+}
+
+
+  .row{
+     flex-direction:row;
+  }
+article{
+  margin-top: 10px;
+  margin-right: 150px;
+  margin-bottom: 10px;
+  margin-left: 150px;
+  font-size:40px;
+ font-family: 'PTSerif', sans-serif; 
+ color:    #000080;
+}
+.article-center /* 这里列出其他文本元素 */
+{
+   text-align: center;
+}
+.article-sameLenghth{
+  text-align: justify;
+  text-justify: distribute-all-lines;
+}
+
+@font-face {
+  font-family: 'DancingScript';
+  src: url('assets/css/fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'PTSerif';
+  src: url('assets/css/fonts/PTSerif-Regular.ttf') format('truetype');
+  font-weight: bold;
+}
+</style>
+    <!-- 导入JS -->
+    <script src="./assets/js/index.js"></script>
+</head>
+<body> 
+    <header id="header-container" ></header>
+    <div class = " flex fullPage center ">
+       <h1 class = "title">Contact Cercle Jasmin</h1>
+      
+
+           
+           <p class = "sub-title "> N'hésitez Pas!</p> 
+          
+         
+
+          <article class = "article-center "> cerclejasmin@gmail.com 
+            <br>      Cercle Jasmin
+            <br>     19 quai saint-michel
+            <br>     75005 Paris  
+             </article>  
+ 
+    <div class = "push-to-end flex">
+    <a  href="https://www.youtube.com">  <img style="width: 40px; height: 40px;"src="assets/img/contact/facebook.webp" alt="YouTube"></a>
+    <div style="width: 40px; height: 50px;"></div>  
+    <a  href="https://www.facebook.com"> <img style="width: 40px; height: 40px;" src="assets/img/contact/youtube.webp" alt="Facebook"></a>
+    </div>
+
+  </div> 
+    <footer id="footer-container" ></footer>
+</body>
+</html>

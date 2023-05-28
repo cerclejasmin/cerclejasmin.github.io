@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+ <style>
+  body{
+    margin: 0;
+  }
+ .footer {
+  background-color: #87ceeb;
+  color: #fff;
+  padding: 5px 0;
+  width: 100%;  
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+   align-items: center;
+}
+
+.footer-left, .footer-right
+ {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  margin: 5px 0;
+  text-align: center;
+
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.avatar {
+      margin-top: 10px;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+          }
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+@font-face {
+  font-family: 'DancingScript';
+  src: url('assets/css/fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'PTSerif';
+  src: url('assets/css/fonts/PTSerif-Regular.ttf') format('truetype');
+  font-weight: bold;
+}
+  .button-img {
+      width: 100px;
+      height: 100px;
+  }
+</style>
+</head>
+<body>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h3>Développeur</h3>
+        <p>ZHAN NING</p>
+        <p>Adress : 1 Av.Pierre Masse Paris 75014</p>
+      </div>
+	  <div class="avatar">
+      <img src="./assets/img/artist/Zhan_Ning.png" alt="Avatar">
+      </div>
+   <div style="width: 10px; height: 100px;"></div>  
+        <a class = "button-img"href="index.html">
+  <img src="assets/img/Jasmin.png" alt="Button Image">
+     </a>
+  <div class="footer-right">
+        <h3>Contact</h3>
+    <p>Email : zhan.ning@imt-atlantique.net</p>
+        <p>Tél : +33 760155973</p>
+      </div>
+    </div>
+    <p class="footer-bottom">Copy right &copy; 2023 ZHAN NING</p>
+  </div>
+</footer>
+</body>
+</html>

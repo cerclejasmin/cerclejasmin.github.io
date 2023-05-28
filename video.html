@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico">
+    <title>Etre Membre</title>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+<style>
+
+body{
+    display: flex;
+    flex-direction:column;   	
+    background-image: url('assets/img/bg/PaperGrille.png');
+    background-size:cover;
+    background-position: center;    
+}
+   .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      /* height: 100vh; */
+      
+    }
+.center{
+justify-content: center;
+align-items: center;
+}
+    .video-item {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+
+    }
+
+    .video-item iframe {
+    width: 100%;
+    border-radius: 10px;
+    }
+  
+
+
+</style>
+    <!-- 导入JS -->
+    <script src="./assets/js/index.js"></script>
+</head>
+<body>
+<header id="header-container" ></header>
+<div style="width: 100vh; height: 46px;"></div>
+  <div class="video-container center" id="videoContainer"></div>
+
+  <script>
+    var videoIds = ["WBCyPBCTMrQ", "2Y32E3UqTJw", "LYa9zbiCvaw", "CwlvEWSObzo", "CwlvEWSObzo", "CwlvEWSObzo", "CwlvEWSObzo", "CwlvEWSObzo"/* 添加更多的视频 ID */];
+
+    var container = document.getElementById("videoContainer");
+    videoIds.forEach(function(videoId) {
+      var videoItem = document.createElement("div");
+      videoItem.className = "video-item";
+      videoItem.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+      container.appendChild(videoItem);
+    });
+  </script>
+ 
+
+
+    <footer id="footer-container" ></footer>
+</body>
+</html>

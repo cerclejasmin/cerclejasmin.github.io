@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico">
+    <title>Etre Membre</title>
+<style>
+body{
+    display: flex;
+    flex-direction:column;   	
+    /* background-image: url('assets/img/bg/PaperGrille.png');
+    background-size:cover;
+    background-position: center; */
+    background-color: #f6ecd6;
+}
+    
+.flex{
+    display: flex;
+}
+.center{
+justify-content: center;
+align-items: center;
+}
+.fullPage{
+   height :100vh;
+   flex-direction:column;
+
+}
+.title{
+ font-size:30px;
+ font-family: 'PTSerif', sans-serif; 
+ color:  #000080;
+}
+
+  .row{
+     flex-direction:row;
+  }
+article{
+  margin-top: 10px;
+  margin-right: 150px;
+  margin-bottom: 10px;
+  margin-left: 150px;
+  font-size:20px;
+ font-family: 'PTSerif', sans-serif; 
+ color:    #000080;
+}
+.article-center /* 这里列出其他文本元素 */
+{
+   text-align: center;
+}
+.article-sameLenghth{
+  text-align: justify;
+  text-justify: distribute-all-lines;
+}
+Unicode-flag{
+    font-size:40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+@font-face {
+  font-family: 'DancingScript';
+  src: url('assets/css/fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'PTSerif';
+  src: url('assets/css/fonts/PTSerif-Regular.ttf') format('truetype');
+  font-weight: bold;
+}
+underline{
+     text-decoration: underline; 
+}
+.rounded-image {
+    border: 0;
+    min-width: 0;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.4rem;
+    height :50vh ;
+}
+
+</style>
+    <!-- 导入JS -->
+    <script src="./assets/js/index.js"></script>
+</head>
+<body>
+    <header id="header-container" ></header>
+    <div class = " flex fullPage center ">
+       <h1 class = "title">Etre Membre</h1>
+       <div class ="flex row center">  
+
+          
+          <article class = "article-center"> Le Cercle Jasmin est ouvert à tous
+            <br>    La cotisation est de 20 euros par an
+            <br>     Vous pouvez envoyer un chèque à l'ordre de Cercle Jasmin,
+            <br>  <underline>19 quai saint-michel 75005 Paris </underline>  
+            <br>   ou régler lors du premier concert auquel vous participez!
+        </article>  </div>  
+        <img src="assets/img/membre.webp" class="rounded-image" alt="圆角图片">       
+    </div>
+    <footer id="footer-container" ></footer>
+</body>
+</html>

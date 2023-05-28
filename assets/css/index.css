@@ -1,0 +1,341 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;  
+}
+
+.intro {
+
+	width:100%;
+	text-align:center;
+	color:#fff;
+	background-image: url('../img/main/MainBackground_white.jpg');
+  background-size:cover;
+
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+  display : flex;
+   justify-content : center; /* 水平居中对齐 */
+   align-items: center;
+       }
+/* 首页文字主体 */
+.intro-body::before {
+  content: "";
+  display: block;
+  border-top: 3px solid #FFFFF0;
+  margin-bottom: 10px;
+}
+.intro .intro-body .intro-text {
+	font-size:30px;
+ font-family: 'DancingScript', sans-serif; 
+}
+.intro .intro-body .brand-heading {
+	font-size:60px;
+  font-family: 'DancingScript', sans-serif;
+}
+
+.justify-content-center{  
+justify-content : center; /* 水平居中对齐 */}
+
+h1{
+  margin: 0px;
+  text-transform: uppercase;/* 把所有字母设置成大写 */
+  font-family: var(--font-heading), var(--font-default);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.btn {
+	border-radius:0;
+	text-transform:uppercase;
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight:400;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.375rem 0.75rem;    
+}
+
+.btn-circle:hover,.btn-circle:focus {
+	outline:0;
+	color:#fff;
+	background:rgba(255,255,255,.1);
+}
+
+
+
+.btn-circle {
+	width:50px;
+	height:50px;
+	margin-top:15px;
+	line-height:40px;
+	text-align:center;
+	border:2px solid #fff;
+	border-radius:100%!important;
+	font-size:20px;
+	color:#fff;
+	background:0 0;
+	-webkit-transition:background .3s ease-in-out;
+	-moz-transition:background .3s ease-in-out;
+	transition:background .3s ease-in-out;
+}
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: pulse;
+    -moz-animation-duration: 1.5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+@font-face {
+  font-family: 'DancingScript';
+  src: url('fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'PTSerif';
+  src: url('fonts/PTSerif-Regular.ttf') format('truetype');
+  font-weight: bold;
+}
+
+
+	
+  .slogan {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #87ceeb;
+    padding: 15px 30px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+     font-family: 'PTSerif-Regular';
+     font-weight: 500;
+  }
+
+  .flag {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+ 
+  }
+
+  .flag-china {
+    background-image: url("../img/flag/china.svg");
+  }
+
+  .flag-france {
+    background-image: url("../img/flag/france.svg");
+  }
+/* 下拉之后的照片页开始了 */
+section {
+    background-color: #f9f9f9;
+    color: #333;
+    overflow: hidden;
+}
+section:after {
+	float:none;
+	clear:both;
+}
+.container-fluid {
+  width: 98%;
+  margin: 0px auto;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+.card-columns .card {
+    display: inline-block;
+    width: 100%;
+}
+
+.card-columns .card {
+    margin-bottom: 0.75rem;
+}
+.card-columns {
+
+    column-count: 4;  /*这个属性会决定每行有多少张照片*/
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+}
+
+.card {
+    border: 0;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.4rem;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+}
+.card-title {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'PTSerif-Regular';
+    font-weight: 500;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.fa-arrow-circle-o-right:before {
+    content: "\f18e";
+}
+.more {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    right: 0;   
+    -webkit-transform: translate(-20%, -20%);
+    transform: translate(-20%, -20%);
+    -ms-transform: translate(-50%, -50%);
+
+}
+.more a {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'PTSerif-Regular';
+}
+.fa-arrow-circle-o-right {
+    margin-right: 5px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

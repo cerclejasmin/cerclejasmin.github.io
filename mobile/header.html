@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <style>
+        /* 导航栏样式 */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        /* 汉堡按钮样式 */
+        .hamburger {
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            cursor: pointer;
+            z-index: 999;
+            font-size: 24px;
+            line-height: 1;
+        }
+
+        /* 下拉菜单样式 */
+        .dropdown {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 998;
+        }
+
+        /* 下拉菜单选项样式 */
+        .dropdown-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <!-- 汉堡按钮 -->
+        <div class="hamburger" onclick="toggleDropdown()">&#9776;</div>
+    </div>
+
+    <!-- 下拉菜单 -->
+    <div class="dropdown" id="dropdown">
+        <div class="dropdown-content">
+            <a href="#">首页</a>
+            <a href="#">关于我们</a>
+            <a href="#">活动</a>
+            <a href="#">成员</a>
+            <a href="#">联系我们</a>
+        </div>
+    </div>
+
+    <!-- JavaScript 代码 -->
+  <script>
+        // 切换下拉菜单的显示和隐藏，以及汉堡和叉号按钮的切换
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown");
+            var hamburger = document.getElementsByClassName("hamburger")[0];
+            var close = document.getElementsByClassName("close")[0];
+            if (dropdown.style.display === "none") {
+                dropdown.style.display = "block";
+                hamburger.style.display = "none";
+                close.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+                hamburger.style.display = "block";
+                close.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</>

@@ -12,12 +12,11 @@ body {
 	width:100%;
 	text-align:center;
 	color:#fff;
-	background-image: url('../img/main/MainBackground_white.jpg');
-  background-size:cover;
-
+	background-image: url('../img/main/MainBackground.jpg');
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
+  background-size:cover;
   display : flex;
    justify-content : center; /* 水平居中对齐 */
    align-items: center;

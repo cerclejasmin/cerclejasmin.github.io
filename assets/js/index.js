@@ -1,11 +1,11 @@
 // 检测设备类型
-// let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-// let isSmallScreen = window.innerWidth < 1300;
+let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+let isSmallScreen = window.innerWidth < 1200;
 
-//  如果是手机设备或屏幕尺寸小于1300，进行跳转
-// if (isMobile || isSmallScreen) {
-//   window.location.href = "https://la-croquette.github.io/CercleJasmin/footer.html";
-// }
+//  如果是手机设备或屏幕尺寸小于1200，进行跳转
+if (isMobile && isSmallScreen) {
+  window.location.href = 'mobile/index.html';
+}
 
 window.onload = function() {
   fetch('header.html')

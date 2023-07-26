@@ -153,13 +153,13 @@ h1{
 
 @font-face {
   font-family: 'DancingScript';
-  src: url('https://example.com/fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+  src: url('https://fonts.gstatic.com/s/dancingscript/v13/If2RXTr6YS-zF4S-kcSWSVi_szLigqFz4Ot3rvNhvxc.ttf') format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'PTSerif';
-  src: url('https://example.com/fonts/PTSerif-Regular.ttf') format('truetype');
+  src: url('https://fonts.gstatic.com/s/ptserif/v13/EJRVQgYoZZY2vCFuvDxBH3R8ZuyyR9iaphY.ttf') format('truetype');
   font-weight: bold;
 }
 

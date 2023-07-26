@@ -22,14 +22,19 @@ justify-content: center;
 align-items: center;
 }
 .fullPage{
-   height :100vh;
+ 
    flex-direction:column;
+}
+.top{
+    margin-top: 30px;
+}
+.bottom{
+    margin-bottom : 30px;
 }
 .title{
  font-size:30px;
  font-family: 'PT Serif', sans-serif; 
  color:  #000080;
-
 }
 .sub-title{
  font-size:20px;
@@ -72,11 +77,6 @@ article{
   text-align: justify;
   text-justify: distribute-all-lines;
 }
-Unicode-flag{
-    font-size:40px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
 
 
 </style>
@@ -87,11 +87,11 @@ Unicode-flag{
     <header id="header-container" ></header>
     <div class = " flex fullPage center ">
       <div style="height: 80px; width: 100vw;"></div>
-       <h1 class = "title">POURQUOI AVONS-NOUS CRÉÉ LE CERCLE JASMIN ?</h1>
+       <h1 class = "title top">POURQUOI AVONS-NOUS CRÉÉ LE CERCLE JASMIN ?</h1>
        <div class ="flex row center">  
-           <Unicode-flag>&#x1F1EB;&#x1F1F7;</Unicode-flag>
+         <div class="flag flag-france"></div>
            <p class = "sub-title"> Pour la connaissance mutuelle des musiques et des cultures, françaises et chinoises</p> 
-           <Unicode-flag>&#x1F1E8;&#x1F1F3;</Unicode-flag>
+             <div class="flag flag-china"></div>
         </div> 
         <article class="article-sameLenghth"> Le Cercle Jasmin, association culturelle, vise à développer la connaissance du répertoire traditionnel et contemporain de musique chinoise en lien avec la musique occidentale et plus spécifiquement française. 
               Son nom, associe le cercle, symbole du collectif et du partage, et le jasmin, qui fascine l’Orient et l’Occident, par sa pureté et son parfum.</article>
@@ -99,7 +99,7 @@ Unicode-flag{
         <article class="article-sameLenghth">En effet, en France, nous sommes dans une situation doublement paradoxale : si la musique occidentale est mondialement diffusée, y compris en Asie et en Chine, la musique chinoise reste peu connue en France, malgré la présence de jeunes musiciens chinois, nombreux, venus se perfectionner dans le répertoire occidental.
                   Le Cercle Jasmin avec notamment ses RENCONTRES MUSICALES FRANCO – CHINOISES a pour but de mieux faire connaître, en Chine et en France, les musiques des deux pays. Il veut en outre contribuer au début de carrière de jeunes musiciens chinois et français en priorité.</article>
          <h1 class = "title">Conseil Administration </h1>
-          <article class = "article-center"> Yves Bamberger, Président  
+          <article class = "article-center bottom"> Yves Bamberger, Président  
             <br>     Joël  Bellassen, Vice-Président de l'Association Internationale des enseignants de chinois
             <br>      François Le Roux, Professeur de chant à l'Ecole Normale Supérieure de Musique de Paris
             <br>     Anne Wu, Membre du conseil de l'administration du Cercle Jasmin

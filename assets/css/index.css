@@ -153,15 +153,16 @@ h1{
 
 @font-face {
   font-family: 'DancingScript';
-  src: url('fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+  src: url('https://example.com/fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'PTSerif';
-  src: url('fonts/PTSerif-Regular.ttf') format('truetype');
+  src: url('https://example.com/fonts/PTSerif-Regular.ttf') format('truetype');
   font-weight: bold;
 }
+
 
 
 	

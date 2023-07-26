@@ -2,7 +2,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 body {
   margin: 0;  
 }
@@ -153,19 +153,14 @@ h1{
 
 @font-face {
   font-family: 'DancingScript';
-  src: url('https://fonts.gstatic.com/s/dancingscript/v13/If2RXTr6YS-zF4S-kcSWSVi_szLigqFz4Ot3rvNhvxc.ttf') format('truetype');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'PTSerif';
-  src: url('https://fonts.gstatic.com/s/ptserif/v13/EJRVQgYoZZY2vCFuvDxBH3R8ZuyyR9iaphY.ttf') format('truetype');
+  src: url('fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
   font-weight: bold;
 }
 
 
 
-	
+
+
   .slogan {
     height: 44px;
     display: flex;
@@ -180,7 +175,7 @@ h1{
     border: 2px solid #FFFFFF;
     border-radius: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-     font-family: 'PTSerif-Regular';
+    font-family: 'PT Serif', sans-serif; 
      font-weight: 500;
   }
 
@@ -297,7 +292,7 @@ img {
     margin-bottom: 0;
     text-align: center;
     font-size: 24px;
-    font-family: 'PTSerif-Regular';
+     font-family: 'PT Serif', sans-serif; 
     font-weight: 500;
 }
 h2 {
@@ -326,7 +321,7 @@ h2 {
 .more a {
   color: #fff;
   font-size: 18px;
-  font-family: 'PTSerif-Regular';
+  font-family: 'PT Serif', sans-serif; 
 }
 .fa-arrow-circle-o-right {
     margin-right: 5px;
